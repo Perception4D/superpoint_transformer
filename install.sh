@@ -60,6 +60,7 @@ echo
 echo "⭐ Installing conda and pip dependencies"
 echo
 conda install pip nb_conda_kernels -y
+conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit cuda-cudart-dev
 pip install matplotlib
 pip install plotly==5.9.0
 pip install "jupyterlab>=3" "ipywidgets>=7.6" jupyter-dash
